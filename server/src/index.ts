@@ -20,9 +20,7 @@ const mount = async (app: Application) => {
   server.applyMiddleware({ app });
 
   app.listen(process.env.PORT);
-  console.log(`server running on port 9000`);
-  const listings = await db.listings.find({}).toArray();
-  console.log(listings);
+  console.log(`server running on port ${process.env.PORT}`);
 };
 
 mount(express());
