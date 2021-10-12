@@ -1,4 +1,4 @@
-interface Listing {
+export interface Listing {
   id: string;
   image: string;
   title: string;
